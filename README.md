@@ -1,6 +1,6 @@
 # HACKATHON PROJECT
 
-A Flutter application developed by academics of the Internet Systems course
+A Flutter application developed by academics of the Internet Systems course - UniALFA Faculdade
 
 - Camila de Lima Fonte
     ## https://github.com/clfonte
