@@ -9,9 +9,9 @@ class Texto {
         decoration: InputDecoration(
           border: OutlineInputBorder(),
           labelText: texto,
-          labelStyle: TextStyle(color: Colors.cyanAccent, fontSize: 25),
+          labelStyle: TextStyle(color: Colors.deepPurple, fontSize: 25),
         ),
-        style: TextStyle(color: Colors.cyanAccent, fontSize: 25),
+        style: TextStyle(color: Colors.deepPurple, fontSize: 25),
         keyboardType: teclado,
       ),
     );

@@ -18,17 +18,23 @@ class Detalhes extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Imagem.mostrarImg(
-              Functions.corrigeLinkImg(dadosVeiculo["fotodestaque"]).toString()
+              Functions.corrigeLinkImg(dadosVeiculo["fotoDestaque"]).toString()
           ), // mostrar img
-          Text("               "
-              "Automóvel: " + dadosVeiculo["anoFabricacao"].toString() +
-              dadosVeiculo["valor"].toString() +
-              dadosVeiculo["tipo"].toString() +
-              dadosVeiculo["opcional"].toString(),
+            Text("\n"
+              "     ----- Informações -----\n" +
+              "\n" +
+              "     Ano do Modelo: "     + dadosVeiculo["anoModelo"].toString() + "\n" +
+              "     Ano de Fabricação: " + dadosVeiculo["anoFabricacao"].toString() + "\n" +
+              "     Tipo "               + dadosVeiculo["tipo"].toString() + "\n" +
+              "     Cor: "               + dadosVeiculo["cor"].toString() + "\n" +
+              "     Marca: "             + dadosVeiculo["marca"].toString() + "\n" +
+              "     Preço R\$ "          + dadosVeiculo["valor"].toString() + "\n" +
+              "     Observações: "       + dadosVeiculo["opcional"].toString(),
               style: TextStyle(
-              color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold)),
+              color: Colors.black, fontSize: 22, fontWeight: FontWeight.bold)),
         ],
       ),
     );
+
   }
 }

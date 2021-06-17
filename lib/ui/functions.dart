@@ -8,10 +8,12 @@ class Functions {
   static const LISTA_MODELO        = 1;
   static const LISTA_ANOMODELO     = 2;
   static const LISTA_ANOFABRICACAO = 3;
-  static const LISTA_VALOR        = 4;
-  static const LISTA_TIPO         = 5;
-  static const LISTA_FOTODESTAQUE = 6;
-  static const LISTA_OPCIONAL     = 7;
+  static const LISTA_VALOR         = 4;
+  static const LISTA_TIPO          = 5;
+  static const LISTA_FOTODESTAQUE  = 6;
+  static const LISTA_COR           = 7;
+  static const LISTA_MARCA         = 8;
+  static const LISTA_OPCIONAL      = 9;
 
   static Widget _iconeEspacado(IconData iconeEspacado, Color corIcone, double tamanhoIcone) {
     return Padding(

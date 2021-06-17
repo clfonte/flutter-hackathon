@@ -12,14 +12,17 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      appBar: BarraTitulo.barraTitulo("JPEC VEÍCULOS", iconeBarra: Icons.directions_car_sharp),
+      appBar: BarraTitulo.barraTitulo("JPEC CONCESSIONÁRIA", iconeBarra: Icons.directions_car_sharp  ),
+      backgroundColor: Colors.deepPurple[100],
+      // deixar os itens abaixo do outro
       body: Column(
         children: <Widget>[
           Expanded(
               child: FutureBuilder(
                   future: Functions.getListaJson(
-                    "https://60c80edcafc88600179f60be.mockapi.io/api/v1/veiculo"),
+                    "https://60caf22521337e0017e4355f.mockapi.io/api/v1/veiculo"),
                 // atenção para as variáveis
                 builder: (context, snapshot) {
                     switch(snapshot.connectionState) {
@@ -29,7 +32,7 @@ class _HomePageState extends State<HomePage> {
                             .criarCarregamento(); // fazer mostrar nossa barrinha top das top de carregamento
                       default: 
                         if (snapshot.hasError)
-                          return Text("NÃO FOI POSSÍVEL VISUALIZAR OS MODELITOS DAS X-WINGS" + snapshot.error.toString());
+                          return Text("NÃO FOI POSSÍVEL VISUALIZAR OS MODELITOS DAS CARROÇAS" + snapshot.error.toString());
                         else
                           return Listagem.criarListagem(context, snapshot, Functions.LISTA_MODELO);
                     }
